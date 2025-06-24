@@ -24,7 +24,7 @@ HRD AI adalah aplikasi simulasi interview kerja berbasis web yang memanfaatkan A
 1. **Clone Repository**
 
 ```bash
-git clone https://github.com/namakamu/HRD-AI.git
+git clone https://github.com/gdslhack/HRD-AI.git
 cd HRD-AI
 ```
 
