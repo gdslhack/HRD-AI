@@ -1,40 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🤖 HRD AI - Interview Simulator
 
-## Getting Started
+HRD AI adalah aplikasi simulasi interview kerja berbasis web yang memanfaatkan AI (OpenRouter) untuk memberikan pertanyaan, menerima jawaban dari user, dan memberikan evaluasi secara otomatis. Cocok digunakan oleh jobseeker yang ingin latihan interview dengan nuansa real!
 
-First, run the development server:
+## 🔥 Fitur Unggulan
+
+- Simulasi interview berbasis posisi & perusahaan pilihan user.
+- AI bertindak sebagai HRD profesional.
+- Bertanya secara bertahap (step-by-step).
+- Evaluasi akhir: penilaian, saran, contoh jawaban, dan pesan penyemangat.
+- UI modern, elegan, dan mobile-friendly.
+- Dukungan follow-up jika jawaban terlalu pendek.
+
+## 🛠️ Teknologi
+
+- Next.js 14
+- Tailwind CSS
+- Framer Motion
+- OpenRouter (model: `meta-llama/llama-3.3-70b-instruct`)
+- OpenAI API Compatible (via OpenRouter)
+
+## 🧪 Cara Menjalankan Lokal
+
+1. **Clone Repository**
+
+```bash
+git clone https://github.com/namakamu/HRD-AI.git
+cd HRD-AI
+```
+
+2. **Install Dependencies**
+
+```bash
+npm install
+```
+
+3. **Buat file `.env.local`**
+
+```env
+OPENROUTER_API_KEY=sk-or-v1-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+```
+
+4. **Jalankan lokal**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 🚀 Deploy ke Vercel
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1. Push ke GitHub
+2. Buka [https://vercel.com/import](https://vercel.com/import)
+3. Pilih repo HRD AI
+4. Tambahkan Environment Variable:
+   - `OPENROUTER_API_KEY`
+5. Deploy 🎉
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## 📄 Lisensi
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+MIT License
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Made with ❤️ by [namakamu](https://github.com/gdslhack)
